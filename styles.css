@@ -37,6 +37,7 @@ nav ul {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    padding: 0;
 }
 
 nav ul li {
@@ -82,4 +83,59 @@ footer {
 footer p {
     font-size: 0.9em;
     color: #666;
+}
+
+/* Responsive styles for tablet */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Responsive styles for smartphone */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    main h2 {
+        font-size: 1.2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
 }
